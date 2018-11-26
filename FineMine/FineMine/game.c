@@ -17,9 +17,9 @@ void game()
 	InitBoard(Showboard, '*');
 	DisplayBoard(Showboard);
 	InitBoard(Mineboard,'0');
-	DisplayBoard(Mineboard);
+	//DisplayBoard(Mineboard);
 	SetMine(Mineboard);
-	DisplayBoard(Mineboard);
+	//DisplayBoard(Mineboard);
 	FindMine(Mineboard,Showboard);
 }
 
@@ -83,7 +83,7 @@ void FindMine(char arr1[ROWS][COLS], char arr2[ROWS][COLS])
 	int count = 0;
 	while (1)
 	{
-		printf("ÇëÊäÈë×ø±ê£º");
+		printf("è¯·è¾“å…¥åæ ‡ï¼š");
 		scanf("%d %d", &x, &y);
 		if (x >= 1 && x <= 9 && y >= 1 && y <= 9)
 		{
@@ -94,7 +94,7 @@ void FindMine(char arr1[ROWS][COLS], char arr2[ROWS][COLS])
 			}
 			else if (arr1[x][y] == '1')
 			{
-				printf("ºÜÒÅº¶£¡Äã±»Õ¨ËÀÁË\n");
+				printf("å¾ˆé—æ†¾ï¼ä½ è¢«ç‚¸æ­»äº†\n");
 				DisplayBoard(arr1);
 				break;
 			}
@@ -105,7 +105,7 @@ void FindMine(char arr1[ROWS][COLS], char arr2[ROWS][COLS])
 			DisplayBoard(arr2);
 			if (win == (ROW*COL - Count))
 			{
-				printf("¹§Ï²Äã£¡É¨À×³É¹¦£¡\n");
+				printf("æ­å–œä½ ï¼æ‰«é›·æˆåŠŸï¼\n");
 				DisplayBoard(arr1);
 				break;
 			}
