@@ -5,7 +5,7 @@
 #define COLS COL+2
 #define ROW 9
 #define COL 9
-#define Count 76
+#define Count 10
 
 #include<stdio.h>
 #include<stdlib.h>
