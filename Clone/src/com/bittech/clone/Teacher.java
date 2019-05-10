@@ -1,0 +1,32 @@
+package com.bittech.clone;
+
+import java.io.Serializable;
+
+public class Teacher implements Serializable {
+    private String name;
+    private String direction;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "name='" + name + '\'' +
+                ", direction='" + direction + '\'' +
+                '}';
+    }
+}
